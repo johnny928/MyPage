@@ -42,31 +42,31 @@
 			{
 				"attrType": "主板芯片",
 				"attrKey": "集成芯片",
-				"attrValue": "声卡/网卡"
+				"attrValue": "声卡/网卡2"
 			}, {
 				"attrType": "主板芯片",
 				"attrKey": "芯片厂商",
-				"attrValue": "Intel"
+				"attrValue": "Intel2"
 			}, {
 				"attrType": "主板芯片",
 				"attrKey": "主芯片组",
-				"attrValue": "采用Intel B85芯片组"
+				"attrValue": "采用Intel B85芯片组1"
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU平台",
-				"attrValue": "Intel"
+				"attrValue": "Intel2"
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU类型",
-				"attrValue": "Core i7/i5/i3/Pentium/Celeron"
+				"attrValue": "Core i7/i5/i3/Pentium/Celeron2"
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU插槽",
-				"attrValue": "LGA 1150"
+				"attrValue": "LGA 11502"
 			}, {
 				"attrType": "内存规格",
 				"attrKey": "内存类型",
-				"attrValue": "DDR3"
+				"attrValue": "DDR32"
 			}
 		]
 	}
