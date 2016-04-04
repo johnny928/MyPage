@@ -32,566 +32,1591 @@
 				"attrType": "内存规格",
 				"attrKey": "内存类型",
 				"attrValue": "DDR3"
+			}, {
+				"attrType": "扩展插槽",
+				"attrKey": "显卡插槽",
+				"attrValue": "PCI-E 3.0标准"
+			}, {
+				"attrType": "扩展插槽",
+				"attrKey": "PCI-E插槽",
+				"attrValue": "2×PCI-E X16显卡插槽"
+			}, {
+				"attrType": "扩展插槽",
+				"attrKey": "PCI插槽",
+				"attrValue": "2×PCI插槽"
+			}, {
+				"attrType": "扩展插槽",
+				"attrKey": "SATA接口",
+				"attrValue": "2×SATA II接口；4×SATA III接口"
+			}, {
+				"attrType": "I/O接口",
+				"attrKey": "USB接口",
+				"attrValue": "8×USB2.0接口（4内置+4背板）；4×USB3.0接口（2内置+2背板）"
+			}, {
+				"attrType": "I/O接口",
+				"attrKey": "HDMI接口",
+				"attrValue": "1×HDMI接口"
+			},{
+				"attrType": "I/O接口",
+				"attrKey": "外接端口",
+				"attrValue": "1×DVI接口1×VGA接口"
+			},{
+				"attrType": "I/O接口",
+				"attrKey": "PS/2接口",
+				"attrValue": "PS/2键盘接口"
+			},{
+				"attrType": "I/O接口",
+				"attrKey": "其它接口",
+				"attrValue": "1×RJ45网络接口1×光纤接口 音频接口"
+			},{
+				"attrType": "板型",
+				"attrKey": "主板板型",
+				"attrValue": "Micro ATX板型"
+			},{
+				"attrType": "板型",
+				"attrKey": "外形尺寸",
+				"attrValue": "24.4×21.3cm"
+			},{
+				"attrType": "软体管理",
+				"attrKey": "BIOS性能",
+				"attrValue": "支持图形界面的多国语64Mb AMI UEFI Legal BIOS符合ACPI 1.1，支持唤醒与自动开机（Wake Up Events）支持SMBIOS 2.3.1CPU，DRAM，PCH 1.05V，PCH 1.5V电压多功能调节器"
+			},{
+				"attrType": "软体管理",
+				"attrKey": "电源管理",
+				"attrValue": "电涌全保护"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "多显卡技术",
+				"attrValue": "支持AMD CrossFireX混合交火技术"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "音频特效",
+				"attrValue": "不支持HIFI"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "电源插口",
+				"attrValue": "一个8针，一个24针电源接口"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "供电模式",
+				"attrValue": "四相"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "硬件监控",
+				"attrValue": "CPU/机箱温度检测CPU/机箱/电源风扇转速计 CPU/机箱静音风扇（可根据处理器温度自动调节机箱风扇转速） CPU/机箱风扇多速控制 机箱开启侦测 电压实时监控：+12V，+5V，+3.3V，核心电压"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "其它特点",
+				"attrValue": "支持Microsoft Windows 8/8 64-bit/7/7 64-bit操作系统"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "超频功能",
+				"attrValue": "支持"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "其它性能",
+				"attrValue": "无线：支持802.11 a/b/g/nWi-Fi标准；支持2.4/5GHz无线双频；支持蓝牙4.0"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "包装清单",
+				"attrValue": "华擎主板 x1快速安装指南 x1 支持光盘 x1 I/O挡板 x1 SATA数据线 x2"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "可选配件",
+				"attrValue": "OC Panel screw pack x1"
+			},{
+				"attrType": "保修信息",
+				"attrKey": "保修政策",
+				"attrValue": "全国联保，享受三包服务"
+			},{
+				"attrType": "保修信息",
+				"attrKey": "质保时间",
+				"attrValue": "3年"
 			}
 		]
 	}, {
 		"goods": {
-			"name": "华擎B85M Pro1"
+			"name": "华擎B85M Pro4"
 		},//模拟固定头部多属性考虑
 		"attr": [
 			{
 				"attrType": "主板芯片",
 				"attrKey": "集成芯片",
-				"attrValue": "声卡/网卡2"
+				"attrValue": "声卡/网卡"
 			}, {
 				"attrType": "主板芯片",
 				"attrKey": "芯片厂商",
-				"attrValue": "Intel2"
+				"attrValue": "Intel"
 			}, {
 				"attrType": "主板芯片",
 				"attrKey": "主芯片组",
-				"attrValue": "采用Intel B85芯片组1"
+				"attrValue": "采用Intel B85芯片组"
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU平台",
-				"attrValue": "Intel2"
+				"attrValue": "Intel"
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU类型",
-				"attrValue": "Core i7/i5/i3/Pentium/Celeron2"
+				"attrValue": "Core i7/i5/i3/Pentium/Celeron"
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU插槽",
-				"attrValue": "LGA 11502"
+				"attrValue": "LGA 1150"
 			}, {
 				"attrType": "内存规格",
 				"attrKey": "内存类型",
-				"attrValue": "DDR32"
+				"attrValue": "DDR3"
+			}, {
+				"attrType": "扩展插槽",
+				"attrKey": "显卡插槽",
+				"attrValue": "PCI-E 3.0标准"
+			}, {
+				"attrType": "扩展插槽",
+				"attrKey": "PCI-E插槽",
+				"attrValue": "2×PCI-E X16显卡插槽"
+			}, {
+				"attrType": "扩展插槽",
+				"attrKey": "PCI插槽",
+				"attrValue": "2×PCI插槽"
+			}, {
+				"attrType": "扩展插槽",
+				"attrKey": "SATA接口",
+				"attrValue": "2×SATA II接口；4×SATA III接口"
+			}, {
+				"attrType": "I/O接口",
+				"attrKey": "USB接口",
+				"attrValue": "8×USB2.0接口（4内置+4背板）；4×USB3.0接口（2内置+2背板）"
+			}, {
+				"attrType": "I/O接口",
+				"attrKey": "HDMI接口",
+				"attrValue": "1×HDMI接口"
+			},{
+				"attrType": "I/O接口",
+				"attrKey": "外接端口",
+				"attrValue": "1×DVI接口1×VGA接口"
+			},{
+				"attrType": "I/O接口",
+				"attrKey": "PS/2接口",
+				"attrValue": "PS/2键盘接口"
+			},{
+				"attrType": "I/O接口",
+				"attrKey": "其它接口",
+				"attrValue": "1×RJ45网络接口1×光纤接口 音频接口"
+			},{
+				"attrType": "板型",
+				"attrKey": "主板板型",
+				"attrValue": "Micro ATX板型"
+			},{
+				"attrType": "板型",
+				"attrKey": "外形尺寸",
+				"attrValue": "24.4×21.3cm"
+			},{
+				"attrType": "软体管理",
+				"attrKey": "BIOS性能",
+				"attrValue": "支持图形界面的多国语64Mb AMI UEFI Legal BIOS符合ACPI 1.1，支持唤醒与自动开机（Wake Up Events）支持SMBIOS 2.3.1CPU，DRAM，PCH 1.05V，PCH 1.5V电压多功能调节器"
+			},{
+				"attrType": "软体管理",
+				"attrKey": "电源管理",
+				"attrValue": "电涌全保护"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "多显卡技术",
+				"attrValue": "支持AMD CrossFireX混合交火技术"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "音频特效",
+				"attrValue": "不支持HIFI"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "电源插口",
+				"attrValue": "一个8针，一个24针电源接口"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "供电模式",
+				"attrValue": "四相"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "硬件监控",
+				"attrValue": "CPU/机箱温度检测CPU/机箱/电源风扇转速计 CPU/机箱静音风扇（可根据处理器温度自动调节机箱风扇转速） CPU/机箱风扇多速控制 机箱开启侦测 电压实时监控：+12V，+5V，+3.3V，核心电压"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "其它特点",
+				"attrValue": "支持Microsoft Windows 8/8 64-bit/7/7 64-bit操作系统"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "超频功能",
+				"attrValue": "支持"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "其它性能",
+				"attrValue": "无线：支持802.11 a/b/g/nWi-Fi标准；支持2.4/5GHz无线双频；支持蓝牙4.0"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "包装清单",
+				"attrValue": "华擎主板 x1快速安装指南 x1 支持光盘 x1 I/O挡板 x1 SATA数据线 x2"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "可选配件",
+				"attrValue": "OC Panel screw pack x1"
+			},{
+				"attrType": "保修信息",
+				"attrKey": "保修政策",
+				"attrValue": "全国联保，享受三包服务"
+			},{
+				"attrType": "保修信息",
+				"attrKey": "质保时间",
+				"attrValue": "3年"
 			}
 		]
 	}, {
 		"goods": {
-			"name": "华擎B85M Pro1"
+			"name": "华擎B85M Pro4"
 		},//模拟固定头部多属性考虑
 		"attr": [
 			{
 				"attrType": "主板芯片",
 				"attrKey": "集成芯片",
-				"attrValue": "声卡/网卡2"
+				"attrValue": "声卡/网卡"
 			}, {
 				"attrType": "主板芯片",
 				"attrKey": "芯片厂商",
-				"attrValue": "Intel2"
+				"attrValue": "Intel"
 			}, {
 				"attrType": "主板芯片",
 				"attrKey": "主芯片组",
-				"attrValue": "采用Intel B85芯片组1"
+				"attrValue": "采用Intel B85芯片组"
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU平台",
-				"attrValue": "Intel2"
+				"attrValue": "Intel"
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU类型",
-				"attrValue": "Core i7/i5/i3/Pentium/Celeron2"
+				"attrValue": "Core i7/i5/i3/Pentium/Celeron"
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU插槽",
-				"attrValue": "LGA 11502"
+				"attrValue": "LGA 1150"
 			}, {
 				"attrType": "内存规格",
 				"attrKey": "内存类型",
-				"attrValue": "DDR32"
+				"attrValue": "DDR3"
+			}, {
+				"attrType": "扩展插槽",
+				"attrKey": "显卡插槽",
+				"attrValue": "PCI-E 3.0标准"
+			}, {
+				"attrType": "扩展插槽",
+				"attrKey": "PCI-E插槽",
+				"attrValue": "2×PCI-E X16显卡插槽"
+			}, {
+				"attrType": "扩展插槽",
+				"attrKey": "PCI插槽",
+				"attrValue": "2×PCI插槽"
+			}, {
+				"attrType": "扩展插槽",
+				"attrKey": "SATA接口",
+				"attrValue": "2×SATA II接口；4×SATA III接口"
+			}, {
+				"attrType": "I/O接口",
+				"attrKey": "USB接口",
+				"attrValue": "8×USB2.0接口（4内置+4背板）；4×USB3.0接口（2内置+2背板）"
+			}, {
+				"attrType": "I/O接口",
+				"attrKey": "HDMI接口",
+				"attrValue": "1×HDMI接口"
+			},{
+				"attrType": "I/O接口",
+				"attrKey": "外接端口",
+				"attrValue": "1×DVI接口1×VGA接口"
+			},{
+				"attrType": "I/O接口",
+				"attrKey": "PS/2接口",
+				"attrValue": "PS/2键盘接口"
+			},{
+				"attrType": "I/O接口",
+				"attrKey": "其它接口",
+				"attrValue": "1×RJ45网络接口1×光纤接口 音频接口"
+			},{
+				"attrType": "板型",
+				"attrKey": "主板板型",
+				"attrValue": "Micro ATX板型"
+			},{
+				"attrType": "板型",
+				"attrKey": "外形尺寸",
+				"attrValue": "24.4×21.3cm"
+			},{
+				"attrType": "软体管理",
+				"attrKey": "BIOS性能",
+				"attrValue": "支持图形界面的多国语64Mb AMI UEFI Legal BIOS符合ACPI 1.1，支持唤醒与自动开机（Wake Up Events）支持SMBIOS 2.3.1CPU，DRAM，PCH 1.05V，PCH 1.5V电压多功能调节器"
+			},{
+				"attrType": "软体管理",
+				"attrKey": "电源管理",
+				"attrValue": "电涌全保护"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "多显卡技术",
+				"attrValue": "支持AMD CrossFireX混合交火技术"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "音频特效",
+				"attrValue": "不支持HIFI"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "电源插口",
+				"attrValue": "一个8针，一个24针电源接口"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "供电模式",
+				"attrValue": "四相"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "硬件监控",
+				"attrValue": "CPU/机箱温度检测CPU/机箱/电源风扇转速计 CPU/机箱静音风扇（可根据处理器温度自动调节机箱风扇转速） CPU/机箱风扇多速控制 机箱开启侦测 电压实时监控：+12V，+5V，+3.3V，核心电压"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "其它特点",
+				"attrValue": "支持Microsoft Windows 8/8 64-bit/7/7 64-bit操作系统"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "超频功能",
+				"attrValue": "支持"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "其它性能",
+				"attrValue": "无线：支持802.11 a/b/g/nWi-Fi标准；支持2.4/5GHz无线双频；支持蓝牙4.0"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "包装清单",
+				"attrValue": "华擎主板 x1快速安装指南 x1 支持光盘 x1 I/O挡板 x1 SATA数据线 x2"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "可选配件",
+				"attrValue": "OC Panel screw pack x1"
+			},{
+				"attrType": "保修信息",
+				"attrKey": "保修政策",
+				"attrValue": "全国联保，享受三包服务"
+			},{
+				"attrType": "保修信息",
+				"attrKey": "质保时间",
+				"attrValue": "3年"
 			}
 		]
 	}, {
 		"goods": {
-			"name": "华擎B85M Pro1"
+			"name": "华擎B85M Pro4"
 		},//模拟固定头部多属性考虑
 		"attr": [
 			{
 				"attrType": "主板芯片",
 				"attrKey": "集成芯片",
-				"attrValue": "声卡/网卡2"
+				"attrValue": "声卡/网卡"
 			}, {
 				"attrType": "主板芯片",
 				"attrKey": "芯片厂商",
-				"attrValue": "Intel2"
+				"attrValue": "Intel"
 			}, {
 				"attrType": "主板芯片",
 				"attrKey": "主芯片组",
-				"attrValue": "采用Intel B85芯片组1"
+				"attrValue": "采用Intel B85芯片组"
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU平台",
-				"attrValue": "Intel2"
+				"attrValue": "Intel"
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU类型",
-				"attrValue": "Core i7/i5/i3/Pentium/Celeron2"
+				"attrValue": "Core i7/i5/i3/Pentium/Celeron"
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU插槽",
-				"attrValue": "LGA 11502"
+				"attrValue": "LGA 1150"
 			}, {
 				"attrType": "内存规格",
 				"attrKey": "内存类型",
-				"attrValue": "DDR32"
+				"attrValue": "DDR3"
+			}, {
+				"attrType": "扩展插槽",
+				"attrKey": "显卡插槽",
+				"attrValue": "PCI-E 3.0标准"
+			}, {
+				"attrType": "扩展插槽",
+				"attrKey": "PCI-E插槽",
+				"attrValue": "2×PCI-E X16显卡插槽"
+			}, {
+				"attrType": "扩展插槽",
+				"attrKey": "PCI插槽",
+				"attrValue": "2×PCI插槽"
+			}, {
+				"attrType": "扩展插槽",
+				"attrKey": "SATA接口",
+				"attrValue": "2×SATA II接口；4×SATA III接口"
+			}, {
+				"attrType": "I/O接口",
+				"attrKey": "USB接口",
+				"attrValue": "8×USB2.0接口（4内置+4背板）；4×USB3.0接口（2内置+2背板）"
+			}, {
+				"attrType": "I/O接口",
+				"attrKey": "HDMI接口",
+				"attrValue": "1×HDMI接口"
+			},{
+				"attrType": "I/O接口",
+				"attrKey": "外接端口",
+				"attrValue": "1×DVI接口1×VGA接口"
+			},{
+				"attrType": "I/O接口",
+				"attrKey": "PS/2接口",
+				"attrValue": "PS/2键盘接口"
+			},{
+				"attrType": "I/O接口",
+				"attrKey": "其它接口",
+				"attrValue": "1×RJ45网络接口1×光纤接口 音频接口"
+			},{
+				"attrType": "板型",
+				"attrKey": "主板板型",
+				"attrValue": "Micro ATX板型"
+			},{
+				"attrType": "板型",
+				"attrKey": "外形尺寸",
+				"attrValue": "24.4×21.3cm"
+			},{
+				"attrType": "软体管理",
+				"attrKey": "BIOS性能",
+				"attrValue": "支持图形界面的多国语64Mb AMI UEFI Legal BIOS符合ACPI 1.1，支持唤醒与自动开机（Wake Up Events）支持SMBIOS 2.3.1CPU，DRAM，PCH 1.05V，PCH 1.5V电压多功能调节器"
+			},{
+				"attrType": "软体管理",
+				"attrKey": "电源管理",
+				"attrValue": "电涌全保护"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "多显卡技术",
+				"attrValue": "支持AMD CrossFireX混合交火技术"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "音频特效",
+				"attrValue": "不支持HIFI"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "电源插口",
+				"attrValue": "一个8针，一个24针电源接口"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "供电模式",
+				"attrValue": "四相"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "硬件监控",
+				"attrValue": "CPU/机箱温度检测CPU/机箱/电源风扇转速计 CPU/机箱静音风扇（可根据处理器温度自动调节机箱风扇转速） CPU/机箱风扇多速控制 机箱开启侦测 电压实时监控：+12V，+5V，+3.3V，核心电压"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "其它特点",
+				"attrValue": "支持Microsoft Windows 8/8 64-bit/7/7 64-bit操作系统"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "超频功能",
+				"attrValue": "支持"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "其它性能",
+				"attrValue": "无线：支持802.11 a/b/g/nWi-Fi标准；支持2.4/5GHz无线双频；支持蓝牙4.0"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "包装清单",
+				"attrValue": "华擎主板 x1快速安装指南 x1 支持光盘 x1 I/O挡板 x1 SATA数据线 x2"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "可选配件",
+				"attrValue": "OC Panel screw pack x1"
+			},{
+				"attrType": "保修信息",
+				"attrKey": "保修政策",
+				"attrValue": "全国联保，享受三包服务"
+			},{
+				"attrType": "保修信息",
+				"attrKey": "质保时间",
+				"attrValue": "3年"
 			}
 		]
 	}, {
 		"goods": {
-			"name": "华擎B85M Pro1"
+			"name": "华擎B85M Pro4"
 		},//模拟固定头部多属性考虑
 		"attr": [
 			{
 				"attrType": "主板芯片",
 				"attrKey": "集成芯片",
-				"attrValue": "声卡/网卡2"
+				"attrValue": "声卡/网卡"
 			}, {
 				"attrType": "主板芯片",
 				"attrKey": "芯片厂商",
-				"attrValue": "Intel2"
+				"attrValue": "Intel"
 			}, {
 				"attrType": "主板芯片",
 				"attrKey": "主芯片组",
-				"attrValue": "采用Intel B85芯片组1"
+				"attrValue": "采用Intel B85芯片组"
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU平台",
-				"attrValue": "Intel2"
+				"attrValue": "Intel"
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU类型",
-				"attrValue": "Core i7/i5/i3/Pentium/Celeron2"
+				"attrValue": "Core i7/i5/i3/Pentium/Celeron"
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU插槽",
-				"attrValue": "LGA 11502"
+				"attrValue": "LGA 1150"
 			}, {
 				"attrType": "内存规格",
 				"attrKey": "内存类型",
-				"attrValue": "DDR32"
+				"attrValue": "DDR3"
+			}, {
+				"attrType": "扩展插槽",
+				"attrKey": "显卡插槽",
+				"attrValue": "PCI-E 3.0标准"
+			}, {
+				"attrType": "扩展插槽",
+				"attrKey": "PCI-E插槽",
+				"attrValue": "2×PCI-E X16显卡插槽"
+			}, {
+				"attrType": "扩展插槽",
+				"attrKey": "PCI插槽",
+				"attrValue": "2×PCI插槽"
+			}, {
+				"attrType": "扩展插槽",
+				"attrKey": "SATA接口",
+				"attrValue": "2×SATA II接口；4×SATA III接口"
+			}, {
+				"attrType": "I/O接口",
+				"attrKey": "USB接口",
+				"attrValue": "8×USB2.0接口（4内置+4背板）；4×USB3.0接口（2内置+2背板）"
+			}, {
+				"attrType": "I/O接口",
+				"attrKey": "HDMI接口",
+				"attrValue": "1×HDMI接口"
+			},{
+				"attrType": "I/O接口",
+				"attrKey": "外接端口",
+				"attrValue": "1×DVI接口1×VGA接口"
+			},{
+				"attrType": "I/O接口",
+				"attrKey": "PS/2接口",
+				"attrValue": "PS/2键盘接口"
+			},{
+				"attrType": "I/O接口",
+				"attrKey": "其它接口",
+				"attrValue": "1×RJ45网络接口1×光纤接口 音频接口"
+			},{
+				"attrType": "板型",
+				"attrKey": "主板板型",
+				"attrValue": "Micro ATX板型"
+			},{
+				"attrType": "板型",
+				"attrKey": "外形尺寸",
+				"attrValue": "24.4×21.3cm"
+			},{
+				"attrType": "软体管理",
+				"attrKey": "BIOS性能",
+				"attrValue": "支持图形界面的多国语64Mb AMI UEFI Legal BIOS符合ACPI 1.1，支持唤醒与自动开机（Wake Up Events）支持SMBIOS 2.3.1CPU，DRAM，PCH 1.05V，PCH 1.5V电压多功能调节器"
+			},{
+				"attrType": "软体管理",
+				"attrKey": "电源管理",
+				"attrValue": "电涌全保护"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "多显卡技术",
+				"attrValue": "支持AMD CrossFireX混合交火技术"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "音频特效",
+				"attrValue": "不支持HIFI"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "电源插口",
+				"attrValue": "一个8针，一个24针电源接口"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "供电模式",
+				"attrValue": "四相"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "硬件监控",
+				"attrValue": "CPU/机箱温度检测CPU/机箱/电源风扇转速计 CPU/机箱静音风扇（可根据处理器温度自动调节机箱风扇转速） CPU/机箱风扇多速控制 机箱开启侦测 电压实时监控：+12V，+5V，+3.3V，核心电压"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "其它特点",
+				"attrValue": "支持Microsoft Windows 8/8 64-bit/7/7 64-bit操作系统"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "超频功能",
+				"attrValue": "支持"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "其它性能",
+				"attrValue": "无线：支持802.11 a/b/g/nWi-Fi标准；支持2.4/5GHz无线双频；支持蓝牙4.0"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "包装清单",
+				"attrValue": "华擎主板 x1快速安装指南 x1 支持光盘 x1 I/O挡板 x1 SATA数据线 x2"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "可选配件",
+				"attrValue": "OC Panel screw pack x1"
+			},{
+				"attrType": "保修信息",
+				"attrKey": "保修政策",
+				"attrValue": "全国联保，享受三包服务"
+			},{
+				"attrType": "保修信息",
+				"attrKey": "质保时间",
+				"attrValue": "3年"
 			}
 		]
 	}, {
 		"goods": {
-			"name": "华擎B85M Pro1"
+			"name": "华擎B85M Pro4"
 		},//模拟固定头部多属性考虑
 		"attr": [
 			{
 				"attrType": "主板芯片",
 				"attrKey": "集成芯片",
-				"attrValue": "声卡/网卡2"
+				"attrValue": "声卡/网卡"
 			}, {
 				"attrType": "主板芯片",
 				"attrKey": "芯片厂商",
-				"attrValue": "Intel2"
+				"attrValue": "Intel"
 			}, {
 				"attrType": "主板芯片",
 				"attrKey": "主芯片组",
-				"attrValue": "采用Intel B85芯片组1"
+				"attrValue": "采用Intel B85芯片组"
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU平台",
-				"attrValue": "Intel2"
+				"attrValue": "Intel"
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU类型",
-				"attrValue": "Core i7/i5/i3/Pentium/Celeron2"
+				"attrValue": "Core i7/i5/i3/Pentium/Celeron"
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU插槽",
-				"attrValue": "LGA 11502"
+				"attrValue": "LGA 1150"
 			}, {
 				"attrType": "内存规格",
 				"attrKey": "内存类型",
-				"attrValue": "DDR32"
+				"attrValue": "DDR3"
+			}, {
+				"attrType": "扩展插槽",
+				"attrKey": "显卡插槽",
+				"attrValue": "PCI-E 3.0标准"
+			}, {
+				"attrType": "扩展插槽",
+				"attrKey": "PCI-E插槽",
+				"attrValue": "2×PCI-E X16显卡插槽"
+			}, {
+				"attrType": "扩展插槽",
+				"attrKey": "PCI插槽",
+				"attrValue": "2×PCI插槽"
+			}, {
+				"attrType": "扩展插槽",
+				"attrKey": "SATA接口",
+				"attrValue": "2×SATA II接口；4×SATA III接口"
+			}, {
+				"attrType": "I/O接口",
+				"attrKey": "USB接口",
+				"attrValue": "8×USB2.0接口（4内置+4背板）；4×USB3.0接口（2内置+2背板）"
+			}, {
+				"attrType": "I/O接口",
+				"attrKey": "HDMI接口",
+				"attrValue": "1×HDMI接口"
+			},{
+				"attrType": "I/O接口",
+				"attrKey": "外接端口",
+				"attrValue": "1×DVI接口1×VGA接口"
+			},{
+				"attrType": "I/O接口",
+				"attrKey": "PS/2接口",
+				"attrValue": "PS/2键盘接口"
+			},{
+				"attrType": "I/O接口",
+				"attrKey": "其它接口",
+				"attrValue": "1×RJ45网络接口1×光纤接口 音频接口"
+			},{
+				"attrType": "板型",
+				"attrKey": "主板板型",
+				"attrValue": "Micro ATX板型"
+			},{
+				"attrType": "板型",
+				"attrKey": "外形尺寸",
+				"attrValue": "24.4×21.3cm"
+			},{
+				"attrType": "软体管理",
+				"attrKey": "BIOS性能",
+				"attrValue": "支持图形界面的多国语64Mb AMI UEFI Legal BIOS符合ACPI 1.1，支持唤醒与自动开机（Wake Up Events）支持SMBIOS 2.3.1CPU，DRAM，PCH 1.05V，PCH 1.5V电压多功能调节器"
+			},{
+				"attrType": "软体管理",
+				"attrKey": "电源管理",
+				"attrValue": "电涌全保护"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "多显卡技术",
+				"attrValue": "支持AMD CrossFireX混合交火技术"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "音频特效",
+				"attrValue": "不支持HIFI"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "电源插口",
+				"attrValue": "一个8针，一个24针电源接口"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "供电模式",
+				"attrValue": "四相"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "硬件监控",
+				"attrValue": "CPU/机箱温度检测CPU/机箱/电源风扇转速计 CPU/机箱静音风扇（可根据处理器温度自动调节机箱风扇转速） CPU/机箱风扇多速控制 机箱开启侦测 电压实时监控：+12V，+5V，+3.3V，核心电压"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "其它特点",
+				"attrValue": "支持Microsoft Windows 8/8 64-bit/7/7 64-bit操作系统"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "超频功能",
+				"attrValue": "支持"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "其它性能",
+				"attrValue": "无线：支持802.11 a/b/g/nWi-Fi标准；支持2.4/5GHz无线双频；支持蓝牙4.0"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "包装清单",
+				"attrValue": "华擎主板 x1快速安装指南 x1 支持光盘 x1 I/O挡板 x1 SATA数据线 x2"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "可选配件",
+				"attrValue": "OC Panel screw pack x1"
+			},{
+				"attrType": "保修信息",
+				"attrKey": "保修政策",
+				"attrValue": "全国联保，享受三包服务"
+			},{
+				"attrType": "保修信息",
+				"attrKey": "质保时间",
+				"attrValue": "3年"
 			}
 		]
 	}, {
 		"goods": {
-			"name": "华擎B85M Pro1"
+			"name": "华擎B85M Pro4"
 		},//模拟固定头部多属性考虑
 		"attr": [
 			{
 				"attrType": "主板芯片",
 				"attrKey": "集成芯片",
-				"attrValue": "声卡/网卡2"
+				"attrValue": "声卡/网卡"
 			}, {
 				"attrType": "主板芯片",
 				"attrKey": "芯片厂商",
-				"attrValue": "Intel2"
+				"attrValue": "Intel"
 			}, {
 				"attrType": "主板芯片",
 				"attrKey": "主芯片组",
-				"attrValue": "采用Intel B85芯片组1"
+				"attrValue": "采用Intel B85芯片组"
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU平台",
-				"attrValue": "Intel2"
+				"attrValue": "Intel"
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU类型",
-				"attrValue": "Core i7/i5/i3/Pentium/Celeron2"
+				"attrValue": "Core i7/i5/i3/Pentium/Celeron"
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU插槽",
-				"attrValue": "LGA 11502"
+				"attrValue": "LGA 1150"
 			}, {
 				"attrType": "内存规格",
 				"attrKey": "内存类型",
-				"attrValue": "DDR32"
+				"attrValue": "DDR3"
+			}, {
+				"attrType": "扩展插槽",
+				"attrKey": "显卡插槽",
+				"attrValue": "PCI-E 3.0标准"
+			}, {
+				"attrType": "扩展插槽",
+				"attrKey": "PCI-E插槽",
+				"attrValue": "2×PCI-E X16显卡插槽"
+			}, {
+				"attrType": "扩展插槽",
+				"attrKey": "PCI插槽",
+				"attrValue": "2×PCI插槽"
+			}, {
+				"attrType": "扩展插槽",
+				"attrKey": "SATA接口",
+				"attrValue": "2×SATA II接口；4×SATA III接口"
+			}, {
+				"attrType": "I/O接口",
+				"attrKey": "USB接口",
+				"attrValue": "8×USB2.0接口（4内置+4背板）；4×USB3.0接口（2内置+2背板）"
+			}, {
+				"attrType": "I/O接口",
+				"attrKey": "HDMI接口",
+				"attrValue": "1×HDMI接口"
+			},{
+				"attrType": "I/O接口",
+				"attrKey": "外接端口",
+				"attrValue": "1×DVI接口1×VGA接口"
+			},{
+				"attrType": "I/O接口",
+				"attrKey": "PS/2接口",
+				"attrValue": "PS/2键盘接口"
+			},{
+				"attrType": "I/O接口",
+				"attrKey": "其它接口",
+				"attrValue": "1×RJ45网络接口1×光纤接口 音频接口"
+			},{
+				"attrType": "板型",
+				"attrKey": "主板板型",
+				"attrValue": "Micro ATX板型"
+			},{
+				"attrType": "板型",
+				"attrKey": "外形尺寸",
+				"attrValue": "24.4×21.3cm"
+			},{
+				"attrType": "软体管理",
+				"attrKey": "BIOS性能",
+				"attrValue": "支持图形界面的多国语64Mb AMI UEFI Legal BIOS符合ACPI 1.1，支持唤醒与自动开机（Wake Up Events）支持SMBIOS 2.3.1CPU，DRAM，PCH 1.05V，PCH 1.5V电压多功能调节器"
+			},{
+				"attrType": "软体管理",
+				"attrKey": "电源管理",
+				"attrValue": "电涌全保护"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "多显卡技术",
+				"attrValue": "支持AMD CrossFireX混合交火技术"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "音频特效",
+				"attrValue": "不支持HIFI"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "电源插口",
+				"attrValue": "一个8针，一个24针电源接口"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "供电模式",
+				"attrValue": "四相"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "硬件监控",
+				"attrValue": "CPU/机箱温度检测CPU/机箱/电源风扇转速计 CPU/机箱静音风扇（可根据处理器温度自动调节机箱风扇转速） CPU/机箱风扇多速控制 机箱开启侦测 电压实时监控：+12V，+5V，+3.3V，核心电压"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "其它特点",
+				"attrValue": "支持Microsoft Windows 8/8 64-bit/7/7 64-bit操作系统"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "超频功能",
+				"attrValue": "支持"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "其它性能",
+				"attrValue": "无线：支持802.11 a/b/g/nWi-Fi标准；支持2.4/5GHz无线双频；支持蓝牙4.0"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "包装清单",
+				"attrValue": "华擎主板 x1快速安装指南 x1 支持光盘 x1 I/O挡板 x1 SATA数据线 x2"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "可选配件",
+				"attrValue": "OC Panel screw pack x1"
+			},{
+				"attrType": "保修信息",
+				"attrKey": "保修政策",
+				"attrValue": "全国联保，享受三包服务"
+			},{
+				"attrType": "保修信息",
+				"attrKey": "质保时间",
+				"attrValue": "3年"
 			}
 		]
 	}, {
 		"goods": {
-			"name": "华擎B85M Pro1"
+			"name": "华擎B85M Pro4"
 		},//模拟固定头部多属性考虑
 		"attr": [
 			{
 				"attrType": "主板芯片",
 				"attrKey": "集成芯片",
-				"attrValue": "声卡/网卡2"
+				"attrValue": "声卡/网卡"
 			}, {
 				"attrType": "主板芯片",
 				"attrKey": "芯片厂商",
-				"attrValue": "Intel2"
+				"attrValue": "Intel"
 			}, {
 				"attrType": "主板芯片",
 				"attrKey": "主芯片组",
-				"attrValue": "采用Intel B85芯片组1"
+				"attrValue": "采用Intel B85芯片组"
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU平台",
-				"attrValue": "Intel2"
+				"attrValue": "Intel"
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU类型",
-				"attrValue": "Core i7/i5/i3/Pentium/Celeron2"
+				"attrValue": "Core i7/i5/i3/Pentium/Celeron"
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU插槽",
-				"attrValue": "LGA 11502"
+				"attrValue": "LGA 1150"
 			}, {
 				"attrType": "内存规格",
 				"attrKey": "内存类型",
-				"attrValue": "DDR32"
+				"attrValue": "DDR3"
+			}, {
+				"attrType": "扩展插槽",
+				"attrKey": "显卡插槽",
+				"attrValue": "PCI-E 3.0标准"
+			}, {
+				"attrType": "扩展插槽",
+				"attrKey": "PCI-E插槽",
+				"attrValue": "2×PCI-E X16显卡插槽"
+			}, {
+				"attrType": "扩展插槽",
+				"attrKey": "PCI插槽",
+				"attrValue": "2×PCI插槽"
+			}, {
+				"attrType": "扩展插槽",
+				"attrKey": "SATA接口",
+				"attrValue": "2×SATA II接口；4×SATA III接口"
+			}, {
+				"attrType": "I/O接口",
+				"attrKey": "USB接口",
+				"attrValue": "8×USB2.0接口（4内置+4背板）；4×USB3.0接口（2内置+2背板）"
+			}, {
+				"attrType": "I/O接口",
+				"attrKey": "HDMI接口",
+				"attrValue": "1×HDMI接口"
+			},{
+				"attrType": "I/O接口",
+				"attrKey": "外接端口",
+				"attrValue": "1×DVI接口1×VGA接口"
+			},{
+				"attrType": "I/O接口",
+				"attrKey": "PS/2接口",
+				"attrValue": "PS/2键盘接口"
+			},{
+				"attrType": "I/O接口",
+				"attrKey": "其它接口",
+				"attrValue": "1×RJ45网络接口1×光纤接口 音频接口"
+			},{
+				"attrType": "板型",
+				"attrKey": "主板板型",
+				"attrValue": "Micro ATX板型"
+			},{
+				"attrType": "板型",
+				"attrKey": "外形尺寸",
+				"attrValue": "24.4×21.3cm"
+			},{
+				"attrType": "软体管理",
+				"attrKey": "BIOS性能",
+				"attrValue": "支持图形界面的多国语64Mb AMI UEFI Legal BIOS符合ACPI 1.1，支持唤醒与自动开机（Wake Up Events）支持SMBIOS 2.3.1CPU，DRAM，PCH 1.05V，PCH 1.5V电压多功能调节器"
+			},{
+				"attrType": "软体管理",
+				"attrKey": "电源管理",
+				"attrValue": "电涌全保护"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "多显卡技术",
+				"attrValue": "支持AMD CrossFireX混合交火技术"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "音频特效",
+				"attrValue": "不支持HIFI"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "电源插口",
+				"attrValue": "一个8针，一个24针电源接口"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "供电模式",
+				"attrValue": "四相"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "硬件监控",
+				"attrValue": "CPU/机箱温度检测CPU/机箱/电源风扇转速计 CPU/机箱静音风扇（可根据处理器温度自动调节机箱风扇转速） CPU/机箱风扇多速控制 机箱开启侦测 电压实时监控：+12V，+5V，+3.3V，核心电压"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "其它特点",
+				"attrValue": "支持Microsoft Windows 8/8 64-bit/7/7 64-bit操作系统"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "超频功能",
+				"attrValue": "支持"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "其它性能",
+				"attrValue": "无线：支持802.11 a/b/g/nWi-Fi标准；支持2.4/5GHz无线双频；支持蓝牙4.0"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "包装清单",
+				"attrValue": "华擎主板 x1快速安装指南 x1 支持光盘 x1 I/O挡板 x1 SATA数据线 x2"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "可选配件",
+				"attrValue": "OC Panel screw pack x1"
+			},{
+				"attrType": "保修信息",
+				"attrKey": "保修政策",
+				"attrValue": "全国联保，享受三包服务"
+			},{
+				"attrType": "保修信息",
+				"attrKey": "质保时间",
+				"attrValue": "3年"
 			}
 		]
 	}, {
 		"goods": {
-			"name": "华擎B85M Pro1"
+			"name": "华擎B85M Pro4"
 		},//模拟固定头部多属性考虑
 		"attr": [
 			{
 				"attrType": "主板芯片",
 				"attrKey": "集成芯片",
-				"attrValue": "声卡/网卡2"
+				"attrValue": "声卡/网卡"
 			}, {
 				"attrType": "主板芯片",
 				"attrKey": "芯片厂商",
-				"attrValue": "Intel2"
+				"attrValue": "Intel"
 			}, {
 				"attrType": "主板芯片",
 				"attrKey": "主芯片组",
-				"attrValue": "采用Intel B85芯片组1"
+				"attrValue": "采用Intel B85芯片组"
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU平台",
-				"attrValue": "Intel2"
+				"attrValue": "Intel"
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU类型",
-				"attrValue": "Core i7/i5/i3/Pentium/Celeron2"
+				"attrValue": "Core i7/i5/i3/Pentium/Celeron"
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU插槽",
-				"attrValue": "LGA 11502"
+				"attrValue": "LGA 1150"
 			}, {
 				"attrType": "内存规格",
 				"attrKey": "内存类型",
-				"attrValue": "DDR32"
+				"attrValue": "DDR3"
+			}, {
+				"attrType": "扩展插槽",
+				"attrKey": "显卡插槽",
+				"attrValue": "PCI-E 3.0标准"
+			}, {
+				"attrType": "扩展插槽",
+				"attrKey": "PCI-E插槽",
+				"attrValue": "2×PCI-E X16显卡插槽"
+			}, {
+				"attrType": "扩展插槽",
+				"attrKey": "PCI插槽",
+				"attrValue": "2×PCI插槽"
+			}, {
+				"attrType": "扩展插槽",
+				"attrKey": "SATA接口",
+				"attrValue": "2×SATA II接口；4×SATA III接口"
+			}, {
+				"attrType": "I/O接口",
+				"attrKey": "USB接口",
+				"attrValue": "8×USB2.0接口（4内置+4背板）；4×USB3.0接口（2内置+2背板）"
+			}, {
+				"attrType": "I/O接口",
+				"attrKey": "HDMI接口",
+				"attrValue": "1×HDMI接口"
+			},{
+				"attrType": "I/O接口",
+				"attrKey": "外接端口",
+				"attrValue": "1×DVI接口1×VGA接口"
+			},{
+				"attrType": "I/O接口",
+				"attrKey": "PS/2接口",
+				"attrValue": "PS/2键盘接口"
+			},{
+				"attrType": "I/O接口",
+				"attrKey": "其它接口",
+				"attrValue": "1×RJ45网络接口1×光纤接口 音频接口"
+			},{
+				"attrType": "板型",
+				"attrKey": "主板板型",
+				"attrValue": "Micro ATX板型"
+			},{
+				"attrType": "板型",
+				"attrKey": "外形尺寸",
+				"attrValue": "24.4×21.3cm"
+			},{
+				"attrType": "软体管理",
+				"attrKey": "BIOS性能",
+				"attrValue": "支持图形界面的多国语64Mb AMI UEFI Legal BIOS符合ACPI 1.1，支持唤醒与自动开机（Wake Up Events）支持SMBIOS 2.3.1CPU，DRAM，PCH 1.05V，PCH 1.5V电压多功能调节器"
+			},{
+				"attrType": "软体管理",
+				"attrKey": "电源管理",
+				"attrValue": "电涌全保护"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "多显卡技术",
+				"attrValue": "支持AMD CrossFireX混合交火技术"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "音频特效",
+				"attrValue": "不支持HIFI"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "电源插口",
+				"attrValue": "一个8针，一个24针电源接口"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "供电模式",
+				"attrValue": "四相"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "硬件监控",
+				"attrValue": "CPU/机箱温度检测CPU/机箱/电源风扇转速计 CPU/机箱静音风扇（可根据处理器温度自动调节机箱风扇转速） CPU/机箱风扇多速控制 机箱开启侦测 电压实时监控：+12V，+5V，+3.3V，核心电压"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "其它特点",
+				"attrValue": "支持Microsoft Windows 8/8 64-bit/7/7 64-bit操作系统"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "超频功能",
+				"attrValue": "支持"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "其它性能",
+				"attrValue": "无线：支持802.11 a/b/g/nWi-Fi标准；支持2.4/5GHz无线双频；支持蓝牙4.0"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "包装清单",
+				"attrValue": "华擎主板 x1快速安装指南 x1 支持光盘 x1 I/O挡板 x1 SATA数据线 x2"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "可选配件",
+				"attrValue": "OC Panel screw pack x1"
+			},{
+				"attrType": "保修信息",
+				"attrKey": "保修政策",
+				"attrValue": "全国联保，享受三包服务"
+			},{
+				"attrType": "保修信息",
+				"attrKey": "质保时间",
+				"attrValue": "3年"
 			}
 		]
 	}, {
 		"goods": {
-			"name": "华擎B85M Pro1"
+			"name": "华擎B85M Pro4"
 		},//模拟固定头部多属性考虑
 		"attr": [
 			{
 				"attrType": "主板芯片",
 				"attrKey": "集成芯片",
-				"attrValue": "声卡/网卡2"
+				"attrValue": "声卡/网卡"
 			}, {
 				"attrType": "主板芯片",
 				"attrKey": "芯片厂商",
-				"attrValue": "Intel2"
+				"attrValue": "Intel"
 			}, {
 				"attrType": "主板芯片",
 				"attrKey": "主芯片组",
-				"attrValue": "采用Intel B85芯片组1"
+				"attrValue": "采用Intel B85芯片组"
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU平台",
-				"attrValue": "Intel2"
+				"attrValue": "Intel"
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU类型",
-				"attrValue": "Core i7/i5/i3/Pentium/Celeron2"
+				"attrValue": "Core i7/i5/i3/Pentium/Celeron"
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU插槽",
-				"attrValue": "LGA 11502"
+				"attrValue": "LGA 1150"
 			}, {
 				"attrType": "内存规格",
 				"attrKey": "内存类型",
-				"attrValue": "DDR32"
+				"attrValue": "DDR3"
+			}, {
+				"attrType": "扩展插槽",
+				"attrKey": "显卡插槽",
+				"attrValue": "PCI-E 3.0标准"
+			}, {
+				"attrType": "扩展插槽",
+				"attrKey": "PCI-E插槽",
+				"attrValue": "2×PCI-E X16显卡插槽"
+			}, {
+				"attrType": "扩展插槽",
+				"attrKey": "PCI插槽",
+				"attrValue": "2×PCI插槽"
+			}, {
+				"attrType": "扩展插槽",
+				"attrKey": "SATA接口",
+				"attrValue": "2×SATA II接口；4×SATA III接口"
+			}, {
+				"attrType": "I/O接口",
+				"attrKey": "USB接口",
+				"attrValue": "8×USB2.0接口（4内置+4背板）；4×USB3.0接口（2内置+2背板）"
+			}, {
+				"attrType": "I/O接口",
+				"attrKey": "HDMI接口",
+				"attrValue": "1×HDMI接口"
+			},{
+				"attrType": "I/O接口",
+				"attrKey": "外接端口",
+				"attrValue": "1×DVI接口1×VGA接口"
+			},{
+				"attrType": "I/O接口",
+				"attrKey": "PS/2接口",
+				"attrValue": "PS/2键盘接口"
+			},{
+				"attrType": "I/O接口",
+				"attrKey": "其它接口",
+				"attrValue": "1×RJ45网络接口1×光纤接口 音频接口"
+			},{
+				"attrType": "板型",
+				"attrKey": "主板板型",
+				"attrValue": "Micro ATX板型"
+			},{
+				"attrType": "板型",
+				"attrKey": "外形尺寸",
+				"attrValue": "24.4×21.3cm"
+			},{
+				"attrType": "软体管理",
+				"attrKey": "BIOS性能",
+				"attrValue": "支持图形界面的多国语64Mb AMI UEFI Legal BIOS符合ACPI 1.1，支持唤醒与自动开机（Wake Up Events）支持SMBIOS 2.3.1CPU，DRAM，PCH 1.05V，PCH 1.5V电压多功能调节器"
+			},{
+				"attrType": "软体管理",
+				"attrKey": "电源管理",
+				"attrValue": "电涌全保护"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "多显卡技术",
+				"attrValue": "支持AMD CrossFireX混合交火技术"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "音频特效",
+				"attrValue": "不支持HIFI"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "电源插口",
+				"attrValue": "一个8针，一个24针电源接口"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "供电模式",
+				"attrValue": "四相"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "硬件监控",
+				"attrValue": "CPU/机箱温度检测CPU/机箱/电源风扇转速计 CPU/机箱静音风扇（可根据处理器温度自动调节机箱风扇转速） CPU/机箱风扇多速控制 机箱开启侦测 电压实时监控：+12V，+5V，+3.3V，核心电压"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "其它特点",
+				"attrValue": "支持Microsoft Windows 8/8 64-bit/7/7 64-bit操作系统"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "超频功能",
+				"attrValue": "支持"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "其它性能",
+				"attrValue": "无线：支持802.11 a/b/g/nWi-Fi标准；支持2.4/5GHz无线双频；支持蓝牙4.0"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "包装清单",
+				"attrValue": "华擎主板 x1快速安装指南 x1 支持光盘 x1 I/O挡板 x1 SATA数据线 x2"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "可选配件",
+				"attrValue": "OC Panel screw pack x1"
+			},{
+				"attrType": "保修信息",
+				"attrKey": "保修政策",
+				"attrValue": "全国联保，享受三包服务"
+			},{
+				"attrType": "保修信息",
+				"attrKey": "质保时间",
+				"attrValue": "3年"
 			}
 		]
 	}, {
 		"goods": {
-			"name": "华擎B85M Pro1"
+			"name": "华擎B85M Pro4"
 		},//模拟固定头部多属性考虑
 		"attr": [
 			{
 				"attrType": "主板芯片",
 				"attrKey": "集成芯片",
-				"attrValue": "声卡/网卡2"
+				"attrValue": "声卡/网卡"
 			}, {
 				"attrType": "主板芯片",
 				"attrKey": "芯片厂商",
-				"attrValue": "Intel2"
+				"attrValue": "Intel"
 			}, {
 				"attrType": "主板芯片",
 				"attrKey": "主芯片组",
-				"attrValue": "采用Intel B85芯片组1"
+				"attrValue": "采用Intel B85芯片组"
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU平台",
-				"attrValue": "Intel2"
+				"attrValue": "Intel"
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU类型",
-				"attrValue": "Core i7/i5/i3/Pentium/Celeron2"
+				"attrValue": "Core i7/i5/i3/Pentium/Celeron"
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU插槽",
-				"attrValue": "LGA 11502"
+				"attrValue": "LGA 1150"
 			}, {
 				"attrType": "内存规格",
 				"attrKey": "内存类型",
-				"attrValue": "DDR32"
+				"attrValue": "DDR3"
+			}, {
+				"attrType": "扩展插槽",
+				"attrKey": "显卡插槽",
+				"attrValue": "PCI-E 3.0标准"
+			}, {
+				"attrType": "扩展插槽",
+				"attrKey": "PCI-E插槽",
+				"attrValue": "2×PCI-E X16显卡插槽"
+			}, {
+				"attrType": "扩展插槽",
+				"attrKey": "PCI插槽",
+				"attrValue": "2×PCI插槽"
+			}, {
+				"attrType": "扩展插槽",
+				"attrKey": "SATA接口",
+				"attrValue": "2×SATA II接口；4×SATA III接口"
+			}, {
+				"attrType": "I/O接口",
+				"attrKey": "USB接口",
+				"attrValue": "8×USB2.0接口（4内置+4背板）；4×USB3.0接口（2内置+2背板）"
+			}, {
+				"attrType": "I/O接口",
+				"attrKey": "HDMI接口",
+				"attrValue": "1×HDMI接口"
+			},{
+				"attrType": "I/O接口",
+				"attrKey": "外接端口",
+				"attrValue": "1×DVI接口1×VGA接口"
+			},{
+				"attrType": "I/O接口",
+				"attrKey": "PS/2接口",
+				"attrValue": "PS/2键盘接口"
+			},{
+				"attrType": "I/O接口",
+				"attrKey": "其它接口",
+				"attrValue": "1×RJ45网络接口1×光纤接口 音频接口"
+			},{
+				"attrType": "板型",
+				"attrKey": "主板板型",
+				"attrValue": "Micro ATX板型"
+			},{
+				"attrType": "板型",
+				"attrKey": "外形尺寸",
+				"attrValue": "24.4×21.3cm"
+			},{
+				"attrType": "软体管理",
+				"attrKey": "BIOS性能",
+				"attrValue": "支持图形界面的多国语64Mb AMI UEFI Legal BIOS符合ACPI 1.1，支持唤醒与自动开机（Wake Up Events）支持SMBIOS 2.3.1CPU，DRAM，PCH 1.05V，PCH 1.5V电压多功能调节器"
+			},{
+				"attrType": "软体管理",
+				"attrKey": "电源管理",
+				"attrValue": "电涌全保护"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "多显卡技术",
+				"attrValue": "支持AMD CrossFireX混合交火技术"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "音频特效",
+				"attrValue": "不支持HIFI"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "电源插口",
+				"attrValue": "一个8针，一个24针电源接口"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "供电模式",
+				"attrValue": "四相"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "硬件监控",
+				"attrValue": "CPU/机箱温度检测CPU/机箱/电源风扇转速计 CPU/机箱静音风扇（可根据处理器温度自动调节机箱风扇转速） CPU/机箱风扇多速控制 机箱开启侦测 电压实时监控：+12V，+5V，+3.3V，核心电压"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "其它特点",
+				"attrValue": "支持Microsoft Windows 8/8 64-bit/7/7 64-bit操作系统"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "超频功能",
+				"attrValue": "支持"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "其它性能",
+				"attrValue": "无线：支持802.11 a/b/g/nWi-Fi标准；支持2.4/5GHz无线双频；支持蓝牙4.0"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "包装清单",
+				"attrValue": "华擎主板 x1快速安装指南 x1 支持光盘 x1 I/O挡板 x1 SATA数据线 x2"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "可选配件",
+				"attrValue": "OC Panel screw pack x1"
+			},{
+				"attrType": "保修信息",
+				"attrKey": "保修政策",
+				"attrValue": "全国联保，享受三包服务"
+			},{
+				"attrType": "保修信息",
+				"attrKey": "质保时间",
+				"attrValue": "3年"
 			}
 		]
 	}, {
 		"goods": {
-			"name": "华擎B85M Pro1"
+			"name": "华擎B85M Pro4"
 		},//模拟固定头部多属性考虑
 		"attr": [
 			{
 				"attrType": "主板芯片",
 				"attrKey": "集成芯片",
-				"attrValue": "声卡/网卡2"
+				"attrValue": "声卡/网卡"
 			}, {
 				"attrType": "主板芯片",
 				"attrKey": "芯片厂商",
-				"attrValue": "Intel2"
+				"attrValue": "Intel"
 			}, {
 				"attrType": "主板芯片",
 				"attrKey": "主芯片组",
-				"attrValue": "采用Intel B85芯片组1"
+				"attrValue": "采用Intel B85芯片组"
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU平台",
-				"attrValue": "Intel2"
+				"attrValue": "Intel"
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU类型",
-				"attrValue": "Core i7/i5/i3/Pentium/Celeron2"
+				"attrValue": "Core i7/i5/i3/Pentium/Celeron"
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU插槽",
-				"attrValue": "LGA 11502"
+				"attrValue": "LGA 1150"
 			}, {
 				"attrType": "内存规格",
 				"attrKey": "内存类型",
-				"attrValue": "DDR32"
-			}
-		]
-	}, {
-		"goods": {
-			"name": "华擎B85M Pro1"
-		},//模拟固定头部多属性考虑
-		"attr": [
-			{
-				"attrType": "主板芯片",
-				"attrKey": "集成芯片",
-				"attrValue": "声卡/网卡2"
+				"attrValue": "DDR3"
 			}, {
-				"attrType": "主板芯片",
-				"attrKey": "芯片厂商",
-				"attrValue": "Intel2"
+				"attrType": "扩展插槽",
+				"attrKey": "显卡插槽",
+				"attrValue": "PCI-E 3.0标准"
 			}, {
-				"attrType": "主板芯片",
-				"attrKey": "主芯片组",
-				"attrValue": "采用Intel B85芯片组1"
+				"attrType": "扩展插槽",
+				"attrKey": "PCI-E插槽",
+				"attrValue": "2×PCI-E X16显卡插槽"
 			}, {
-				"attrType": "处理器规格",
-				"attrKey": "CPU平台",
-				"attrValue": "Intel2"
+				"attrType": "扩展插槽",
+				"attrKey": "PCI插槽",
+				"attrValue": "2×PCI插槽"
 			}, {
-				"attrType": "处理器规格",
-				"attrKey": "CPU类型",
-				"attrValue": "Core i7/i5/i3/Pentium/Celeron2"
+				"attrType": "扩展插槽",
+				"attrKey": "SATA接口",
+				"attrValue": "2×SATA II接口；4×SATA III接口"
 			}, {
-				"attrType": "处理器规格",
-				"attrKey": "CPU插槽",
-				"attrValue": "LGA 11502"
+				"attrType": "I/O接口",
+				"attrKey": "USB接口",
+				"attrValue": "8×USB2.0接口（4内置+4背板）；4×USB3.0接口（2内置+2背板）"
 			}, {
-				"attrType": "内存规格",
-				"attrKey": "内存类型",
-				"attrValue": "DDR32"
-			}
-		]
-	}, {
-		"goods": {
-			"name": "华擎B85M Pro1"
-		},//模拟固定头部多属性考虑
-		"attr": [
-			{
-				"attrType": "主板芯片",
-				"attrKey": "集成芯片",
-				"attrValue": "声卡/网卡2"
-			}, {
-				"attrType": "主板芯片",
-				"attrKey": "芯片厂商",
-				"attrValue": "Intel2"
-			}, {
-				"attrType": "主板芯片",
-				"attrKey": "主芯片组",
-				"attrValue": "采用Intel B85芯片组1"
-			}, {
-				"attrType": "处理器规格",
-				"attrKey": "CPU平台",
-				"attrValue": "Intel2"
-			}, {
-				"attrType": "处理器规格",
-				"attrKey": "CPU类型",
-				"attrValue": "Core i7/i5/i3/Pentium/Celeron2"
-			}, {
-				"attrType": "处理器规格",
-				"attrKey": "CPU插槽",
-				"attrValue": "LGA 11502"
-			}, {
-				"attrType": "内存规格",
-				"attrKey": "内存类型",
-				"attrValue": "DDR32"
-			}
-		]
-	}, {
-		"goods": {
-			"name": "华擎B85M Pro1"
-		},//模拟固定头部多属性考虑
-		"attr": [
-			{
-				"attrType": "主板芯片",
-				"attrKey": "集成芯片",
-				"attrValue": "声卡/网卡2"
-			}, {
-				"attrType": "主板芯片",
-				"attrKey": "芯片厂商",
-				"attrValue": "Intel2"
-			}, {
-				"attrType": "主板芯片",
-				"attrKey": "主芯片组",
-				"attrValue": "采用Intel B85芯片组1"
-			}, {
-				"attrType": "处理器规格",
-				"attrKey": "CPU平台",
-				"attrValue": "Intel2"
-			}, {
-				"attrType": "处理器规格",
-				"attrKey": "CPU类型",
-				"attrValue": "Core i7/i5/i3/Pentium/Celeron2"
-			}, {
-				"attrType": "处理器规格",
-				"attrKey": "CPU插槽",
-				"attrValue": "LGA 11502"
-			}, {
-				"attrType": "内存规格",
-				"attrKey": "内存类型",
-				"attrValue": "DDR32"
-			}
-		]
-	}, {
-		"goods": {
-			"name": "华擎B85M Pro1"
-		},//模拟固定头部多属性考虑
-		"attr": [
-			{
-				"attrType": "主板芯片",
-				"attrKey": "集成芯片",
-				"attrValue": "声卡/网卡2"
-			}, {
-				"attrType": "主板芯片",
-				"attrKey": "芯片厂商",
-				"attrValue": "Intel2"
-			}, {
-				"attrType": "主板芯片",
-				"attrKey": "主芯片组",
-				"attrValue": "采用Intel B85芯片组1"
-			}, {
-				"attrType": "处理器规格",
-				"attrKey": "CPU平台",
-				"attrValue": "Intel2"
-			}, {
-				"attrType": "处理器规格",
-				"attrKey": "CPU类型",
-				"attrValue": "Core i7/i5/i3/Pentium/Celeron2"
-			}, {
-				"attrType": "处理器规格",
-				"attrKey": "CPU插槽",
-				"attrValue": "LGA 11502"
-			}, {
-				"attrType": "内存规格",
-				"attrKey": "内存类型",
-				"attrValue": "DDR32"
-			}
-		]
-	}, {
-		"goods": {
-			"name": "华擎B85M Pro1"
-		},//模拟固定头部多属性考虑
-		"attr": [
-			{
-				"attrType": "主板芯片",
-				"attrKey": "集成芯片",
-				"attrValue": "声卡/网卡2"
-			}, {
-				"attrType": "主板芯片",
-				"attrKey": "芯片厂商",
-				"attrValue": "Intel2"
-			}, {
-				"attrType": "主板芯片",
-				"attrKey": "主芯片组",
-				"attrValue": "采用Intel B85芯片组1"
-			}, {
-				"attrType": "处理器规格",
-				"attrKey": "CPU平台",
-				"attrValue": "Intel2"
-			}, {
-				"attrType": "处理器规格",
-				"attrKey": "CPU类型",
-				"attrValue": "Core i7/i5/i3/Pentium/Celeron2"
-			}, {
-				"attrType": "处理器规格",
-				"attrKey": "CPU插槽",
-				"attrValue": "LGA 11502"
-			}, {
-				"attrType": "内存规格",
-				"attrKey": "内存类型",
-				"attrValue": "DDR32"
+				"attrType": "I/O接口",
+				"attrKey": "HDMI接口",
+				"attrValue": "1×HDMI接口"
+			},{
+				"attrType": "I/O接口",
+				"attrKey": "外接端口",
+				"attrValue": "1×DVI接口1×VGA接口"
+			},{
+				"attrType": "I/O接口",
+				"attrKey": "PS/2接口",
+				"attrValue": "PS/2键盘接口"
+			},{
+				"attrType": "I/O接口",
+				"attrKey": "其它接口",
+				"attrValue": "1×RJ45网络接口1×光纤接口 音频接口"
+			},{
+				"attrType": "板型",
+				"attrKey": "主板板型",
+				"attrValue": "Micro ATX板型"
+			},{
+				"attrType": "板型",
+				"attrKey": "外形尺寸",
+				"attrValue": "24.4×21.3cm"
+			},{
+				"attrType": "软体管理",
+				"attrKey": "BIOS性能",
+				"attrValue": "支持图形界面的多国语64Mb AMI UEFI Legal BIOS符合ACPI 1.1，支持唤醒与自动开机（Wake Up Events）支持SMBIOS 2.3.1CPU，DRAM，PCH 1.05V，PCH 1.5V电压多功能调节器"
+			},{
+				"attrType": "软体管理",
+				"attrKey": "电源管理",
+				"attrValue": "电涌全保护"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "多显卡技术",
+				"attrValue": "支持AMD CrossFireX混合交火技术"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "音频特效",
+				"attrValue": "不支持HIFI"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "电源插口",
+				"attrValue": "一个8针，一个24针电源接口"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "供电模式",
+				"attrValue": "四相"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "硬件监控",
+				"attrValue": "CPU/机箱温度检测CPU/机箱/电源风扇转速计 CPU/机箱静音风扇（可根据处理器温度自动调节机箱风扇转速） CPU/机箱风扇多速控制 机箱开启侦测 电压实时监控：+12V，+5V，+3.3V，核心电压"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "其它特点",
+				"attrValue": "支持Microsoft Windows 8/8 64-bit/7/7 64-bit操作系统"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "超频功能",
+				"attrValue": "支持"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "其它性能",
+				"attrValue": "无线：支持802.11 a/b/g/nWi-Fi标准；支持2.4/5GHz无线双频；支持蓝牙4.0"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "包装清单",
+				"attrValue": "华擎主板 x1快速安装指南 x1 支持光盘 x1 I/O挡板 x1 SATA数据线 x2"
+			},{
+				"attrType": "其它参数",
+				"attrKey": "可选配件",
+				"attrValue": "OC Panel screw pack x1"
+			},{
+				"attrType": "保修信息",
+				"attrKey": "保修政策",
+				"attrValue": "全国联保，享受三包服务"
+			},{
+				"attrType": "保修信息",
+				"attrKey": "质保时间",
+				"attrValue": "3年"
 			}
 		]
 	}

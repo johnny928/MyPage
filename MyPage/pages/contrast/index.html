@@ -21,7 +21,12 @@
 		<style type="text/css">
 			html,
 			body {
-				height: 100%
+				height: 100%;
+			}
+			
+			body,
+			.table-responsive {
+				position: relative;
 			}
 			
 			.contrast_table {
@@ -38,6 +43,41 @@
 			.contrast_table .good_detail {}
 			
 			.contrast_table .good_detail {}
+			
+			.affix {
+				top: 0px;
+				z-index: 100;
+				background-color: #FFFFFF;
+				display: block;
+			}
+			
+			.bs-docs-sidebar .nav>.active:focus>a,
+			.bs-docs-sidebar .nav>.active:hover>a,
+			.bs-docs-sidebar .nav>.active>a {
+				padding-left: 18px;
+				font-weight: 700;
+				color: #563d7c;
+				background-color: transparent;
+				border-left: 2px solid #563d7c;
+			}
+			
+			.bs-docs-sidebar .nav>li>a {
+				display: block;
+				padding: 4px 20px;
+				font-size: 13px;
+				font-weight: 500;
+				color: #767676;
+			}
+			
+			.nav>li>a {
+				position: relative;
+				display: block;
+				padding: 10px 15px;
+			}
+			
+			.mysidebar-affix {
+				margin-top: 200px;
+			}
 		</style>
 		<title></title>
 
@@ -52,57 +92,54 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-2">
-
-					<div class="navbar-scrollspy myaffix mysidebar-affix" data-spy="affix" data-offset-top="200">
+					<div class="navbar-scrollspy myaffix mysidebar-affix" data-spy="affix" data-offset-top="40">
 						<nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm mysidebar-hidden">
 							<ul class="nav bs-docs-sidenav">
 								<li>
-									<a href="#zbxp">主板芯片</a>
+									<a href="#attr_type_index_0">主板芯片</a>
 								</li>
 								<li>
-									<a href="#clqgg">处理器规格</a>
+									<a href="#attr_type_index_1">处理器规格</a>
 								</li>
 								<li>
-									<a href="#ncgg">内存规格</a>
+									<a href="#attr_type_index_2">内存规格</a>
 								</li>
 								<li>
-									<a href="#kzcc">扩展插槽</a>
+									<a href="#attr_type_index_3">扩展插槽</a>
 								</li>
 								<li>
-									<a href="#iojk">I/O接口</a>
+									<a href="#attr_type_index_4">I/O接口</a>
 								</li>
 								<li>
-									<a href="#bx">板型</a>
+									<a href="#attr_type_index_5">板型</a>
 								</li>
 								<li>
-									<a href="#rtgl">软体管理</a>
+									<a href="#attr_type_index_6">软体管理</a>
 								</li>
 								<li>
-									<a href="#qtcs">其它参数</a>
+									<a href="#attr_type_index_7">其它参数</a>
 								</li>
 								<li>
-									<a href="#zbfj">主板附件</a>
-								</li>
-								<li>
-									<a href="#bxxx">保修信息</a>
+									<a href="#attr_type_index_8">保修信息</a>
 								</li>
 							</ul>
 						</nav>
 					</div>
 				</div>
-				<div class="col-md-9">
-					<div class="table-responsive" style="min-height: 100%;">
-						<table class="table table-bordered table-hover contrast_table" cellpadding="0" cellspacing="0">
-							<tbody class="attr_detail">
-								<!--                 
+				<div class="col-md-10">
+					<!--<div class="table-responsive">-->
+					<table class="table table-bordered table-hover contrast_table" cellpadding="0" cellspacing="0">
+						<tbody class="attr_detail">
+							<!--                 
 									<tr class="goods_detail" id="goods_detail_name"></tr>
 									<tr class="attr_type" id="attr_type_index_1"></tr>
 									<tr class="attr_item attr_type_index_1" id="attr_item_index_1" ></tr>
 									<tr class="attr_item attr_type_index_1" id="attr_item_index_2"></tr>
 									-->
-							</tbody>
-						</table>
-					</div>
+						</tbody>
+					</table>
+					<!--</div>-->
+
 				</div>
 			</div>
 		</div>
@@ -114,14 +151,54 @@
 		<script type="text/javascript">
 			$(document).ready(function() {
 				initPageSize();
+				initScrollspy();
 				getPageData();
 				setOnclickAttrTypeEvent();
+				setAffixEvent();
 			});
 
-			function initPageSize(){
-				$('.table-responsive').css('min-height',$(window).height()-$(document.body).find('div:first').height());
+			function initScrollspy() {
+				$('body').scrollspy({
+					target: '.navbar-scrollspy'
+				});
 			}
-			
+
+			function setAffixEvent() {
+				$('.myaffix').on('affix.bs.affix', function() {
+					var _affixDom = $(this),
+						_i = 0;
+					_affixDom.find('*').each(function() {
+						$(this).attr('width_bs', $(this).width());
+						_i++;
+					});
+				});
+				$('.myaffix').on('affixed.bs.affix', function() {
+					var _affixDom = $(this),
+						_i = 0,
+						_mysidebar_width = 165;
+					if (_affixDom.find('.mysidebar-hidden').length > 0) {
+						_affixDom.find('.mysidebar-hidden').show();
+						_affixDom.find('.mysidebar-hidden').find('ul,li,a').each(function() {
+							$(this).width(_mysidebar_width);
+						});
+					} else {
+						_affixDom.find('*').each(function() {
+							$(this).width($(this).attr('width_bs'));
+							_i++;
+						});
+					}
+				});
+				$('.myaffix').on('affix-top.bs.affix', function() {
+					var _affixDom = $(this);
+					_affixDom.find('.mysidebar-hidden').hide();
+					_affixDom.find('.mysidebar-hidden').removeClass('mysidebar');
+				});
+			}
+
+			function initPageSize() {
+				$('.table-responsive').css('min-height', $(window).height() - $(document.body).find('div:first').height()).css('height', $(window).height() - $(document.body).find('div:first').height());
+			}
+
 			function getPageData() {
 				$.ajax({
 					type: "get",
@@ -153,6 +230,12 @@
 				var $goodsTR = $(document.createElement("tr")); //<tr class="goods_detail" id="goods_detail_name"></tr>
 				$goodsTR.addClass("goods_detail");
 				var $tBody = $(".attr_detail");
+				$goodsTR.affix({
+					offset: {
+						top: 40
+					}
+				});
+				$goodsTR.addClass('myaffix');
 				$tBody.append($goodsTR);
 				for (var i = 0, len = data.length; i < len; i++) {
 					//获取th固定列部分。
