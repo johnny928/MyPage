@@ -95,32 +95,32 @@
 				<div class="navbar-scrollspy myaffix mysidebar-affix" data-spy="affix" data-offset-top="40">
 					<nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm mysidebar-hidden">
 						<ul class="nav bs-docs-sidenav">
-							<li>
+							<li data-point="attr_type_index_1" class="active">
 								<a href="#attr_type_index_1">主板芯片</a>
 							</li>
-							<li>
-								<a href="#attr_type_index_5">处理器规格</a>
+							<li data-point="attr_type_index_5">
+								<a href="#attr_type_index_5"  >处理器规格</a>
 							</li>
-							<li>
-								<a href="#attr_type_index_9">内存规格</a>
+							<li data-point="attr_type_index_9">
+								<a href="#attr_type_index_9"  >内存规格</a>
 							</li>
-							<li>
-								<a href="#attr_type_index_11">扩展插槽</a>
+							<li data-point="attr_type_index_11">
+								<a href="#attr_type_index_11"  >扩展插槽</a>
 							</li>
-							<li>
-								<a href="#attr_type_index_16">I/O接口</a>
+							<li data-point="attr_type_index_16">
+								<a href="#attr_type_index_16" >I/O接口</a>
 							</li>
-							<li>
-								<a href="#attr_type_index_22">板型</a>
+							<li data-point="attr_type_index_22">
+								<a href="#attr_type_index_22" >板型</a>
 							</li>
-							<li>
-								<a href="#attr_type_index_25">软体管理</a>
+							<li data-point="attr_type_index_25">
+								<a href="#attr_type_index_25" >软体管理</a>
 							</li>
-							<li>
-								<a href="#attr_type_index_28">其它参数</a>
+							<li data-point="attr_type_index_28">
+								<a href="#attr_type_index_28" >其它参数</a>
 							</li>
-							<li>
-								<a href="#attr_type_index_39">保修信息</a>
+							<li data-point="attr_type_index_39">
+								<a href="#attr_type_index_39" >保修信息</a>
 							</li>
 						</ul>
 					</nav>
@@ -143,6 +143,7 @@
 
 		<script type="text/javascript">
 			$(document).ready(function() {
+				var tracePoints = [];
 				$('#table').bootstrapTable('destroy').bootstrapTable({
 					columns: columns,
 					data: rowdata,
@@ -155,12 +156,35 @@
 						var $table = $('#table');
 						for (var i = 0; i < ptypes.length; i++) {
 							$table.find('tr:eq(' + ptypes[i] + ')').attr('id', 'attr_type_index_' + ptypes[i]);
+							var point = {};
+							point['rownum'] = ptypes[i];
+							point['id']='attr_type_index_' + ptypes[i];
+							point['positionTop']=$('#'+point['id']).position().top;
+							tracePoints.push(point);
 						}
-						initScrollspy();
-						$('[data-spy="scroll"]').each(function() {
-							var $spy = $(this).scrollspy('refresh')
-						})
-//						setAffixEvent($('.myaffix'));
+						//						initScrollspy();
+						//						$('[data-spy="scroll"]').each(function() {
+						//							var $spy = $(this).scrollspy('refresh')
+						//						})
+						//						setAffixEvent($('.myaffix'));
+					},
+					bsScrollListener: function() {
+						var min_val = -1, min_id = '';
+						var that = this;
+						$.each(tracePoints, function($index,$el) {
+							var _val = Math.abs($(that).scrollTop() - $('#'+$el.id).position().top);
+							if(min_val==-1){
+								min_val = _val;
+							}
+							if(_val<=min_val){
+								min_val = _val;
+								min_id = $el.id;
+							}
+						});
+						console.log('current id:'+min_id);//当前描点
+						$('.mysidebar-affix li').removeClass('active');
+						$('.mysidebar-affix').find('[data-point="'+min_id+'"]').addClass('active');
+//						console.log('here:' + $(this).scrollTop() + '    ' + $('#attr_type_index_28').offset().top + '   ' + $('#attr_type_index_28').position().top + '   ' + ($(this).scrollTop() - $('#attr_type_index_28').position().top));
 					}
 				});
 			});

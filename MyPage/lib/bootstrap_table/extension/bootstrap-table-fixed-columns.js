@@ -156,6 +156,10 @@
 
         // events
         this.$tableBody.on('scroll', function () {
+        	/*调用自定义滚动监听方法*/
+        	if(that.options.bsScrollListener){
+        		that.options.bsScrollListener.apply(this);
+        	}
             that.$fixedBody.find('table').css('top', -$(this).scrollTop());
         });
         this.$body.find('> tr[data-index]').off('hover').hover(function () {
