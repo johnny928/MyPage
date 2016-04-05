@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Demo</title>
+
+		<link href="../../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="../../lib/bootstrap_table/bootstrap-table.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../lib/bootstrap_table/extension/bootstrap-table-fixed-columns.css" />
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<style type="text/css">
+			html,
+			body {
+				height: 100%;
+			}
+			
+			body {
+				position: relative;
+			}
+			
+			.contrast_table {
+				border-collapse: collapse;
+				/* 边框合并属性  */
+			}
+			
+			.contrast_table td,
+			.contrast_table th {
+				padding: 12px;
+				border: 1px solid #eee;
+			}
+			
+			.contrast_table .good_detail {}
+			
+			.contrast_table .good_detail {}
+			
+			.affix {
+				top: 0px;
+				z-index: 100;
+				background-color: #FFFFFF;
+				display: block;
+			}
+			
+			.bs-docs-sidebar .nav>.active:focus>a,
+			.bs-docs-sidebar .nav>.active:hover>a,
+			.bs-docs-sidebar .nav>.active>a {
+				padding-left: 18px;
+				font-weight: 700;
+				color: #563d7c;
+				background-color: transparent;
+				border-left: 2px solid #563d7c;
+			}
+			
+			.bs-docs-sidebar .nav>li>a {
+				display: block;
+				padding: 4px 20px;
+				font-size: 13px;
+				font-weight: 500;
+				color: #767676;
+			}
+			
+			.nav>li>a {
+				position: relative;
+				display: block;
+				padding: 10px 15px;
+			}
+			
+			.mysidebar-affix {
+				margin-top: 200px;
+			}
+		</style>
+		<title></title>
+
+	</head>
+
+	<body>
+		<div>
+			<div class="container">
+				<h1>这是一个产品比对的Demo</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="mysidebar col-md-2">
+				<div class="navbar-scrollspy myaffix mysidebar-affix" data-spy="affix" data-offset-top="40">
+					<nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm mysidebar-hidden">
+						<ul class="nav bs-docs-sidenav">
+							<li>
+								<a href="#attr_type_index_1">主板芯片</a>
+							</li>
+							<li>
+								<a href="#attr_type_index_5">处理器规格</a>
+							</li>
+							<li>
+								<a href="#attr_type_index_9">内存规格</a>
+							</li>
+							<li>
+								<a href="#attr_type_index_11">扩展插槽</a>
+							</li>
+							<li>
+								<a href="#attr_type_index_16">I/O接口</a>
+							</li>
+							<li>
+								<a href="#attr_type_index_22">板型</a>
+							</li>
+							<li>
+								<a href="#attr_type_index_25">软体管理</a>
+							</li>
+							<li>
+								<a href="#attr_type_index_28">其它参数</a>
+							</li>
+							<li>
+								<a href="#attr_type_index_39">保修信息</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div id='goods_detail' class="col-md-10">
+				<table id="table" data-show-columns="false"></table>
+			</div>
+		</div>
+		</div>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="../../lib/jQuery/jquery-2.2.2.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+		<script src="../../lib/bootstrap_table/bootstrap-table.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../lib/bootstrap_table/bootstrap-table-zh-CN.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../lib/bootstrap_table/extension/bootstrap-table-fixed-columns.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../data/data.js" type="text/javascript" charset="utf-8"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#table').bootstrapTable('destroy').bootstrapTable({
+					columns: columns,
+					data: rowdata,
+					search: false,
+					toolbar: '.toolbar',
+					fixedColumns: true,
+					fixedNumber: 1,
+					height: $(window).height() - $(document.body).find('div:first').height(),
+					onPostBody: function() {
+						var $table = $('#table');
+						for (var i = 0; i < ptypes.length; i++) {
+							$table.find('tr:eq(' + ptypes[i] + ')').attr('id', 'attr_type_index_' + ptypes[i]);
+						}
+						initScrollspy();
+						$('[data-spy="scroll"]').each(function() {
+							var $spy = $(this).scrollspy('refresh')
+						})
+//						setAffixEvent($('.myaffix'));
+					}
+				});
+			});
+
+			function initScrollspy() {
+				$('.fixed-table-body-columns').scrollspy({
+					target: '.navbar-scrollspy'
+				});
+			}
+
+			function setAffixEvent(obj) {
+				window.onload = function() {
+					obj.on('affix.bs.affix', function() {
+						var _affixDom = $(this),
+							_i = 0;
+						_affixDom.find('*').each(function() {
+							$(this).attr('width_bs', $(this).width());
+							_i++;
+						});
+					});
+					obj.on('affixed.bs.affix', function() {
+						var _affixDom = $(this),
+							_i = 0,
+							_mysidebar_width = 165;
+						if (_affixDom.find('.mysidebar-hidden').length > 0) {
+							_affixDom.find('.mysidebar-hidden').show();
+							_affixDom.find('.mysidebar-hidden').find('ul,li,a').each(function() {
+								$(this).width(_mysidebar_width);
+							});
+						} else {
+							_affixDom.find('*').each(function() {
+								console.log('dom_' + _i + ': width_bs=' + $(this).attr('width_bs'));
+								$(this).width($(this).attr('width_bs'));
+								_i++;
+							});
+						}
+					});
+					obj.on('affix-top.bs.affix', function() {
+						var _affixDom = $(this);
+						_affixDom.find('.mysidebar-hidden').hide();
+						_affixDom.find('.mysidebar-hidden').removeClass('mysidebar');
+					});
+				};
+			}
+		</script>
+	</body>
+
+</html>
