@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<style type="text/css">
+			.contrast_table {
+				border-collapse: collapse;
+				/* 边框合并属性  */
+			}
+			
+			.contrast_table td,
+			.contrast_table th {
+				padding: 12px;
+				border: 1px solid #eee;
+				width: 100px;
+				height: 28px;
+
+			}
+			
+			.contrast_table .good_detail {}
+			
+			.contrast_table .good_detail {}
+			
+			.tableEditInput {
+				border: 1px solid skyblue;
+				height: 100%;
+				width: 100%;
+			}
+			
+			.focus {
+				padding: 0;
+				border: none;
+			}
+		</style>
+		<title></title>
+	</head>
+
+	<body>
+		<input type="button" value="添加行" class="addRowBtn" />
+		<input type="button" value="添加列" class="addColBtn" />
+		<table class="contrast_table" cellpadding="0" cellspacing="0">
+			<tbody class="product_wrap">
+				<tr class="products">
+					<th>产品属性</th>
+					<td class="product" data-index="1">产品属性</td>
+				</tr>
+				<tr class="attr_wrap">
+					<th class="attr_code" id="attr1" data-type="type1">产品属性1</th>
+					<td class="attr1">属性</td>
+				</tr>
+				<tr class="attr_wrap">
+					<th class="attr_code" id="attr2">产品属性</th>
+					<td class="attr1">产品属性</td>
+				</tr>
+			</tbody>
+		</table>
+		<script src="../../lib/jQuery/jquery-2.2.2.js"></script>
+		<script src="../../lib/myLibs/edit.js"></script>
+	</body>
+
+</html>
