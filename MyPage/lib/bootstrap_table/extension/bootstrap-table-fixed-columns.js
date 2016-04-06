@@ -151,7 +151,9 @@
         }).show();
 
         this.$body.find('> tr').each(function (i) {
-            that.$fixedBody.find('tr:eq(' + i + ')').height($(this).height() - 1);
+        	//that.$fixedBody.find('tr:eq(' + i + ')').height($(this).height() - 1);源代码不知道为什么要减一
+        	that.$fixedBody.find("table").css({"margin-top":"-1px"})
+            that.$fixedBody.find('tr:eq(' + i + ')').height($(this).height());
         });
 
         // events
