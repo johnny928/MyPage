@@ -142,18 +142,15 @@
 			// the fixed height should reduce the scorll-x height
 			height = this.$tableBody.height() - 14;
 
-<<<<<<< HEAD
 		if (!this.$body.find('> tr[data-index]').length) {
 			this.$fixedBody.hide();
 			return;
 		}
-=======
         this.$body.find('> tr').each(function (i) {
         	//that.$fixedBody.find('tr:eq(' + i + ')').height($(this).height() - 1);源代码不知道为什么要减一
         	that.$fixedBody.find("table").css({"margin-top":"-1px"})
             that.$fixedBody.find('tr:eq(' + i + ')').height($(this).height());
         });
->>>>>>> branch 'master' of https://github.com/johnny928/MyPage.git
 
 		if (!this.options.height) {
 			top = this.$fixedHeader.height();
