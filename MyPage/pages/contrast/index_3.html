@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Demo</title>
+
+		<link href="../../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<style type="text/css">
+			html,
+			body {
+				height: 100%;
+			}
+			
+			body,
+			.table-responsive {
+				position: relative;
+			}
+			
+			.contrast_table {
+				border-collapse: collapse;
+				/* 边框合并属性  */
+			}
+			
+			.contrast_table td,
+			.contrast_table th {
+				padding: 12px;
+				border: 1px solid #eee;
+			}
+			
+			.contrast_table .good_detail {}
+			
+			.contrast_table .good_detail {}
+			
+			.affix {
+				top: 0px;
+				z-index: 999;
+			}
+			/**/
+			
+			.contrast {
+				position: relative;
+				overflow-x: auto;
+				overflow-y: auto;
+				height: 100%;
+			}
+			
+			.myfixed-table-header {
+				overflow: hidden;
+				background-color: #2AABD2;
+			}
+		</style>
+		<title></title>
+
+	</head>
+
+	<body>
+		<div>
+			<div class="container">
+				<h1>这是一个产品比对的Demo</h1>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2">
+				</div>
+				<div class="col-md-8">
+					<div class="contrast">
+						<table id="mytable" class="table table-bordered table-hover contrast_table" cellpadding="0" cellspacing="0">
+							<tbody class="attr_detail">
+								<!--                 
+										<tr class="goods_detail" id="goods_detail_name"></tr>
+										<tr class="attr_type" id="attr_type_index_1"></tr>
+										<tr class="attr_item attr_type_index_1" id="attr_item_index_1" ></tr>
+										<tr class="attr_item attr_type_index_1" id="attr_item_index_2"></tr>
+										-->
+							</tbody>
+						</table>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="../../lib/jQuery/jquery-2.2.2.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				getPageData();
+				setOnclickAttrTypeEvent();
+			});
+
+			function getPageData() {
+				$.ajax({
+					type: "get",
+					url: "../../data/index.txt",
+					async: true,
+					dataType: "html",
+					success: function(data) {
+						console.log(2222)
+						data = eval(data);
+						initPage(data);
+					},
+					complete: function(XHR, TS) {
+						console.log(1111)
+					}
+				});
+			}
+
+			function setOnclickAttrTypeEvent() {
+				$(".attr_detail").on("click", ".attr_type", function() {
+					var thisId = this.id;
+					$("." + thisId).toggle();
+				});
+			}
+
+			function initPage(data) {
+				var attrTypeIndex = 0;
+				var attrType = "";
+				var navigationData = [];
+				var $goodsTR = $(document.createElement("tr")); //<tr class="goods_detail" id="goods_detail_name"></tr>
+				$goodsTR.addClass("goods_detail");
+				var $tBody = $(".attr_detail");
+				/*				$goodsTR.affix({
+									offset: {
+										top: 40
+									}
+								});*/
+				$tBody.append($goodsTR);
+				for (var i = 0, len = data.length; i < len; i++) {
+					//获取th固定列部分。
+					var obj = data[i];
+					if (i == 0) {
+						var $goodTH = $(document.createElement("th"));
+						$goodTH.html("产品名称");
+						$goodsTR.append($goodTH);
+					}
+					var $goodTD = $(document.createElement("td"));
+					$goodTD.html((obj.goods).name);
+					$goodsTR.append($goodTD);
+					for (var j = 0, jLen = (obj.attr).length; j < jLen; j++) {
+						var objAttr = (obj.attr)[j];
+						if (attrType != objAttr.attrType && i == 0) { //找到分类
+							navigationData.push({
+								"typeindex": attrTypeIndex,
+								"typename": objAttr.attrType
+							});
+							var $typeTR = $(document.createElement("tr")).addClass("attr_type").attr("id", "attr_type_index_" + attrTypeIndex); //<tr class="attr_type" id="attr_type_index_1"></tr>
+							var $typeTD = $(document.createElement("td")).attr("colspan", len + 1).html(objAttr.attrType);
+							$typeTR.append($typeTD);
+							attrTypeIndex += 1;
+							attrType = objAttr.attrType;
+							$tBody.append($typeTR);
+						}
+						//	<tr class="attr_item attr_type_index_1" id="attr_item_index_1" ></tr>
+						var $attrTR;
+						if (i == 0) {
+							$attrTR = $(document.createElement("tr")).addClass("attr_item " + "attr_type_index_" + (attrTypeIndex - 1)).attr("id", "attr_item_index_" + j);
+							var $attrTH = $(document.createElement("th")).html(objAttr.attrKey);
+							$attrTR.append($attrTH);
+							$tBody.append($attrTR);
+						} else {
+							$attrTR = $("#attr_item_index_" + j);
+						}
+						var $attrTD = $(document.createElement("td")).html(objAttr.attrValue);
+						$attrTR.append($attrTD);
+					}
+				}
+				fixHeader();
+			}
+
+			function fixHeader() {
+				var $tableheader = $([
+					'<div class="myfixed-table-header">',
+					'<table>',
+					'<thead></thead>',
+					'</table>',
+					'</div>'
+				].join(''));
+				$('#mytable').before($tableheader);
+				//$tableheader.width($tableheader.parent().width());
+				$tableheader.find('table').append($('#mytable tr:eq(0)').clone());
+				$tableheader.find('table').attr('class', $('#mytable').attr('class'));
+				$tableheader.find('table').width($('#mytable').width());
+				$tableheader.find('table tr:eq(0)').width($('#mytable').find('tr:eq(0)').width());
+				$tableheader.find('table tr:eq(0) *').each(function($inx, $el) {
+					var _index = $inx;
+					if ($($el).is('th')) {
+						_index = 0;
+					} else {
+						_index = $inx - 1;
+					}
+					var thatWidth = $('#mytable').find('tr:eq(0) ' + $($el)[0].tagName + ':eq(' + _index + ')').width();
+					var thisWidthOld = $($el).width();
+					console.log('thatWidth=' + thatWidth + '   thisWidthOld=' + thisWidthOld);
+					$($el).width(thatWidth + 1);
+					console.log('thisWidthNew=' + $($el).width());
+				});
+				var orgn_width = $tableheader.find('table').width();
+				$tableheader.affix({
+					offset: {
+						top: 40
+					}
+				});
+				$tableheader.closest('.contrast').on('scroll', function() {
+					$tableheader.scrollLeft($(this).scrollLeft());
+				});
+				$tableheader.on('affix.bs.affix', function() {
+					$tableheader.width($tableheader.parent().width());
+				});
+				$tableheader.on('affix-top.bs.affix', function() {
+					$tableheader.width(orgn_width);
+				});
+			}
+		</script>
+	</body>
+
+</html>
