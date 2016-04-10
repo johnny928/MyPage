@@ -44,11 +44,17 @@
 			
 			.contrast_table .good_detail {}
 			
+			
+			/**/
+			
 			.affix {
 				top: 0px;
-				z-index: 999;
+				z-index: 100;
 			}
-			/**/
+			
+			.myfixed-table-header-columns.affix{
+				z-index: 101;
+			}
 			
 			.contrast {
 				position: relative;
@@ -58,7 +64,21 @@
 			}
 			
 			.myfixed-table-header {
+				/*position: absolute;*/
 				overflow: hidden;
+				background-color: #2AABD2;
+			}
+			
+			.myfixed-table-header.affix-top,  .myfixed-table-header-columns.affix-top{
+				position: absolute;
+			}
+			
+			.myfixed-table-body-columns {
+				position: absolute;
+				background-color: #2AABD2;
+			}
+			
+			.myfixed-table-header-columns{
 				background-color: #2AABD2;
 			}
 		</style>
@@ -161,7 +181,7 @@
 							});
 							var $typeTR = $(document.createElement("tr")).addClass("attr_type").attr("id", "attr_type_index_" + attrTypeIndex); //<tr class="attr_type" id="attr_type_index_1"></tr>
 							var $typeTD = $(document.createElement("td")).attr("colspan", len + 1).html(objAttr.attrType);
-							$typeTR.append($typeTD);
+							//$typeTR.append($typeTD);
 							attrTypeIndex += 1;
 							attrType = objAttr.attrType;
 							$tBody.append($typeTR);
@@ -180,7 +200,9 @@
 						$attrTR.append($attrTD);
 					}
 				}
+				fixHeaderCol();
 				fixHeader();
+				fixColumns();
 			}
 
 			function fixHeader() {
@@ -222,8 +244,81 @@
 				$tableheader.on('affix.bs.affix', function() {
 					$tableheader.width($tableheader.parent().width());
 				});
+				$tableheader.on('affixed.bs.affix', function() {
+					$tableheader.scrollLeft($tableheader.closest('.contrast').scrollLeft());
+				});
 				$tableheader.on('affix-top.bs.affix', function() {
 					$tableheader.width(orgn_width);
+				});
+			};
+
+			function fixColumns() {
+				var $tablecolumns = $([
+					'<div class="myfixed-table-body-columns">',
+					'<table>',
+					'<tbody></tbody>',
+					'</table>',
+					'</div>'
+				].join(''));
+				$('#mytable').before($tablecolumns);
+				$('#mytable tr').find('th:eq(0)').each(function($i, $el) {
+					var _tr = $('<tr></tr>'),
+						_td = $(this).clone();
+					_tr.append(_td);
+					_tr.attr('class', $(this).closest('tr').attr('class'));
+					_td.width($(this).width());
+					_td.height($(this).height());
+					_tr.height($(this).closest('tr').height());
+					$tablecolumns.find('table').append(_tr);
+					console.log('o.td.height=' + $(this).height() + '   o.tr.height=' + $(this).closest('tr').height() + '    td.height=' + _td.height() + '    tr.height=' + _tr.height());
+				});
+				$tablecolumns.find('table').attr('class', $('#mytable').attr('class'));
+				//				$tablecolumns.css('position', 'absolute');
+				var _orgOffsetTop = $tablecolumns.offset().top;
+				$tablecolumns.closest('.contrast').on('scroll', function() {
+					if ($(this).scrollLeft() == 0) {
+						$tablecolumns.css('position', 'absolute');
+					} else {
+						$tablecolumns.css('position', 'fixed');
+					}
+					resetColumnsTop($tablecolumns, $(window), _orgOffsetTop);
+				});
+				$(window).on('scroll', function() {
+					resetColumnsTop($tablecolumns, $(window), _orgOffsetTop);
+				});
+			}
+
+			function resetColumnsTop($obj, $scrollObj, $orgOffsetTop) {
+				if ($obj.css('position') == 'absolute') {
+					$obj.css('top', 'auto');
+				} else {
+					$obj.css('top', $orgOffsetTop - $scrollObj.scrollTop());
+				}
+			}
+
+			function fixHeaderCol() {
+				var $tableheadercol = $([
+					'<div class="myfixed-table-header-columns">',
+					'<table>',
+					'<tbody></tbody>',
+					'</table>',
+					'</div>'
+				].join(''));
+				$('#mytable').before($tableheadercol);
+				var _that_td = $('#mytable tr:eq(0)').find('th:eq(0)');
+				var _tr = $('<tr></tr>'),
+					_td = _that_td.clone();
+				_tr.append(_td);
+				_tr.attr('class', _that_td.closest('tr').attr('class'));
+				_td.width(_that_td.outerWidth());
+				_td.height(_that_td.height());
+				_tr.height(_that_td.closest('tr').height());
+				$tableheadercol.find('table').append(_tr);
+				$tableheadercol.find('table').attr('class', $('#mytable').attr('class'));
+				$tableheadercol.affix({
+					offset: {
+						top: 40
+					}
 				});
 			}
 		</script>
