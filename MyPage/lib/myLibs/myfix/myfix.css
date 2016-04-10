@@ -1,0 +1,35 @@
+.affix {
+	top: 0px;
+	z-index: 100;
+}
+
+.myfixed-table-header-columns.affix {
+	z-index: 101;
+}
+
+.myfixed {
+	position: relative;
+	overflow-x: auto;
+	overflow-y: auto;
+	height: 100%;
+}
+
+.myfixed-table-header {
+	/*position: absolute;*/
+	overflow: hidden;
+	background-color: #2AABD2;
+}
+
+.myfixed-table-header.affix-top,
+.myfixed-table-header-columns.affix-top {
+	position: absolute;
+}
+
+.myfixed-table-body-columns {
+	position: absolute;
+	background-color: #2AABD2;
+}
+
+.myfixed-table-header-columns {
+	background-color: #2AABD2;
+}
