@@ -127,7 +127,7 @@
 					</nav>
 				</div>
 			</div>
-			<div id='goods_detail' class="col-md-10">
+			<div id='goods_detail' class="col-md-8">
 				<table id="table" data-show-columns="false"></table>
 			</div>
 		</div>
@@ -163,11 +163,6 @@
 							point['positionTop'] = $('#' + point['id']).position().top;
 							tracePoints.push(point);
 						}
-						//						initScrollspy();
-						//						$('[data-spy="scroll"]').each(function() {
-						//							var $spy = $(this).scrollspy('refresh')
-						//						})
-						//						setAffixEvent($('.myaffix'));
 					},
 					bsScrollListener: function() {
 						var min_val = -1,

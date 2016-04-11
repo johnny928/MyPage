@@ -23,7 +23,7 @@
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU类型",
-				"attrValue": "Core i7/i5/i3/Pentium/Celeron"
+				"attrValue": "Core "
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU插槽",
@@ -158,7 +158,7 @@
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU类型",
-				"attrValue": "Core i7/i5/i3/Pentium/Celeron"
+				"attrValue": "Core "
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU插槽",
@@ -293,7 +293,7 @@
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU类型",
-				"attrValue": "Core i7/i5/i3/Pentium/Celeron"
+				"attrValue": "Core "
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU插槽",
@@ -428,7 +428,7 @@
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU类型",
-				"attrValue": "Core i7/i5/i3/Pentium/Celeron"
+				"attrValue": "Core "
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU插槽",
@@ -563,7 +563,7 @@
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU类型",
-				"attrValue": "Core i7/i5/i3/Pentium/Celeron"
+				"attrValue": "Core "
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU插槽",
@@ -698,7 +698,7 @@
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU类型",
-				"attrValue": "Core i7/i5/i3/Pentium/Celeron"
+				"attrValue": "Core "
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU插槽",
@@ -833,7 +833,7 @@
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU类型",
-				"attrValue": "Core i7/i5/i3/Pentium/Celeron"
+				"attrValue": "Core "
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU插槽",
@@ -968,7 +968,7 @@
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU类型",
-				"attrValue": "Core i7/i5/i3/Pentium/Celeron"
+				"attrValue": "Core "
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU插槽",
@@ -1103,7 +1103,7 @@
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU类型",
-				"attrValue": "Core i7/i5/i3/Pentium/Celeron"
+				"attrValue": "Core "
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU插槽",
@@ -1238,7 +1238,7 @@
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU类型",
-				"attrValue": "Core i7/i5/i3/Pentium/Celeron"
+				"attrValue": "Core "
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU插槽",
@@ -1373,7 +1373,7 @@
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU类型",
-				"attrValue": "Core i7/i5/i3/Pentium/Celeron"
+				"attrValue": "Core "
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU插槽",
@@ -1508,7 +1508,7 @@
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU类型",
-				"attrValue": "Core i7/i5/i3/Pentium/Celeron"
+				"attrValue": "Core "
 			}, {
 				"attrType": "处理器规格",
 				"attrKey": "CPU插槽",
