@@ -27,7 +27,7 @@ function addRow(title, colcount, $val) {
 			if ($val != '') {
 				row['field_' + i] = $val + i;
 			} else {
-				row['field_' + i] = '';
+				row['field_' + i] = '&nbsp;';
 			}
 
 		}
