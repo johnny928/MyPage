@@ -89,10 +89,24 @@
 		<script src="../../lib/myLibs/myfix/myfix.js" type="text/javascript" charset="utf-8"></script>
 		<script src="../../lib/mCustomScrollbar/jquery.mCustomScrollbar.js"></script>
 		
+		<script src="../../lib/mCustomScrollbar/jquery.mCustomScrollbar.js"></script>
+	
+
+		
 		<script type="text/javascript">
 			$(document).ready(function() {
 				getPageData();
 				setOnclickAttrTypeEvent();
+				
+			
+
+				$(window).load(function(){
+					$(".myfixed").mCustomScrollbar({
+						xClass:"fixedbar",
+						axis: "x",
+						scrollInertia:0
+					});
+				});
 			});
 
 			function getPageData() {
