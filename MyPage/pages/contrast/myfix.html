@@ -10,6 +10,14 @@
 
 		<link href="../../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="../../lib/myLibs/myfix/myfix.css" />
+		<link rel="stylesheet" href="jquery.mCustomScrollbar.css">
+<style>
+			.fixedbar{
+			position: fixed;
+			bottom: 5px;
+			left: 0;
+		}
+</style>
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -79,6 +87,7 @@
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
 		<script src="../../lib/myLibs/myfix/myfix.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../lib/mCustomScrollbar/jquery.mCustomScrollbar.js"></script>
 		
 		<script type="text/javascript">
 			$(document).ready(function() {
@@ -163,6 +172,12 @@
 					}
 				};
 				$('#mytable').myfix();
+//				$('#mytable').closest('.myfixed').mCustomScrollbar({
+//					yClass:"fixedbar",
+//					axis: "xy",
+//					scrollInertia:0
+//				});
+				
 			}
 		</script>
 	</body>
